@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AD18C8BF-0A43-457B-AC9F-D66CB1A7E7F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{5C873AE8-91C9-442C-A621-D362076693B4}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		docs\ImportProduct.xlsx = docs\ImportProduct.xlsx
+		docs\Product Catalog.postman_collection.json = docs\Product Catalog.postman_collection.json
+		docs\README.md = docs\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0BED4311-76D4-4291-B986-726EE4A41F2B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCatalog.WebApi", "src\ProductCatalog.WebApi\ProductCatalog.WebApi.csproj", "{1D7DA7A6-AAAD-4C7D-8B00-8129218FC2B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCatalog.Entities", "src\ProductCatalog.Entities\ProductCatalog.Entities.csproj", "{33133E6C-94C3-43F2-A96E-02AE5B0846F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalog.UnitTest", "test\ProductCatalog.UnitTest\ProductCatalog.UnitTest.csproj", "{BFBE9A4E-71F7-4B22-BB19-1888A15BD505}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalog.IntegrationTest", "test\ProductCatalog.IntegrationTest\ProductCatalog.IntegrationTest.csproj", "{DC6570E0-4690-4BB4-ACD8-06FEE5B568B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D7DA7A6-AAAD-4C7D-8B00-8129218FC2B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D7DA7A6-AAAD-4C7D-8B00-8129218FC2B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D7DA7A6-AAAD-4C7D-8B00-8129218FC2B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D7DA7A6-AAAD-4C7D-8B00-8129218FC2B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33133E6C-94C3-43F2-A96E-02AE5B0846F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33133E6C-94C3-43F2-A96E-02AE5B0846F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33133E6C-94C3-43F2-A96E-02AE5B0846F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33133E6C-94C3-43F2-A96E-02AE5B0846F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFBE9A4E-71F7-4B22-BB19-1888A15BD505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFBE9A4E-71F7-4B22-BB19-1888A15BD505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFBE9A4E-71F7-4B22-BB19-1888A15BD505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFBE9A4E-71F7-4B22-BB19-1888A15BD505}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC6570E0-4690-4BB4-ACD8-06FEE5B568B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC6570E0-4690-4BB4-ACD8-06FEE5B568B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC6570E0-4690-4BB4-ACD8-06FEE5B568B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC6570E0-4690-4BB4-ACD8-06FEE5B568B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1D7DA7A6-AAAD-4C7D-8B00-8129218FC2B3} = {AD18C8BF-0A43-457B-AC9F-D66CB1A7E7F2}
+		{33133E6C-94C3-43F2-A96E-02AE5B0846F8} = {AD18C8BF-0A43-457B-AC9F-D66CB1A7E7F2}
+		{BFBE9A4E-71F7-4B22-BB19-1888A15BD505} = {0BED4311-76D4-4291-B986-726EE4A41F2B}
+		{DC6570E0-4690-4BB4-ACD8-06FEE5B568B1} = {0BED4311-76D4-4291-B986-726EE4A41F2B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {64E9DDC9-BE12-4F21-9438-A6F549227E7A}
+	EndGlobalSection
+EndGlobal
