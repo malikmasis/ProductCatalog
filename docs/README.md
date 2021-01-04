@@ -1,5 +1,6 @@
 ﻿# ProductCatalog
-Managing Product Catalog - RESTful service - EFCore - MySQL
+Managing Product Catalog - RESTful service - EFCore - MySQL - AutoMapper - Swagger
+youtube link: https://www.youtube.com/watch?v=gIKpvwmSJh0&t=11s&ab_channel=MalikMasis
 
 ##### Projeyi Ayağa Kaldırmak
 
