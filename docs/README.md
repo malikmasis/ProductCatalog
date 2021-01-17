@@ -1,7 +1,8 @@
 ﻿# ProductCatalog
 Managing Product Catalog - RESTful service - EFCore - MySQL - AutoMapper - Swagger
-youtube link-1: https://www.youtube.com/watch?v=gIKpvwmSJh0&t=11s&ab_channel=MalikMasis
-youtube link-2: https://www.youtube.com/watch?v=6QfyYf7RoQg&ab_channel=MalikMasis
+genel structure youtube link-1: https://www.youtube.com/watch?v=gIKpvwmSJh0&t=11s&ab_channel=MalikMasis 
+controller youtube link-2: https://www.youtube.com/watch?v=6QfyYf7RoQg&ab_channel=MalikMasis
+unit-integration youtube linnk-3 https://www.youtube.com/watch?v=My0FdMKq2JA&ab_channel=MalikMasis
 
 ##### Projeyi Ayağa Kaldırmak
 
