@@ -24,6 +24,11 @@ namespace ProductCatalog.WebApi
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options => options.AddPolicy("ApiCorsPolicy", builder =>
+            {
+                builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+            }));
+
             services.AddControllers();
 
             services.AddDbContext<ProductCatalogDbContext>(options =>
@@ -48,6 +53,8 @@ namespace ProductCatalog.WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors("ApiCorsPolicy");
 
             app.UseSwagger();
 
