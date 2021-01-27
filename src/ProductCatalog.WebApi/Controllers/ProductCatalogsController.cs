@@ -91,7 +91,7 @@ namespace ProductCatalog.WebApi.Controllers
 
                 if (result > 0)
                 {
-                    return Ok(product.Id);
+                    return Ok(product);
                 }
                 return BadRequest("Cannot update properly");
             }
@@ -109,10 +109,11 @@ namespace ProductCatalog.WebApi.Controllers
             {
                 if (productData == null)
                 {
+                    await Task.CompletedTask;
                     throw new ArgumentException(nameof(productData));
                 }
 
-                var product = await _context.Products.FirstOrDefaultAsync(p => p.Id == productData.Id);
+                var product = await _context.Products.FindAsync(new object[] { productData.Id });
 
                 if (product == null)
                 {
@@ -130,7 +131,7 @@ namespace ProductCatalog.WebApi.Controllers
 
                     if (result > 0)
                     {
-                        return Ok(product.Id);
+                        return Ok(product);
                     }
 
                     return BadRequest("Cannot update properly");
@@ -150,6 +151,7 @@ namespace ProductCatalog.WebApi.Controllers
             {
                 if (product == null)
                 {
+                    await Task.CompletedTask;
                     throw new ArgumentException(nameof(product));
                 }
                 _context.Products.Add(product);
@@ -157,7 +159,7 @@ namespace ProductCatalog.WebApi.Controllers
 
                 if (result > 0)
                 {
-                    return Ok(product.Id);
+                    return Ok(product);
                 }
                 return BadRequest("Cannot save properly");
             }
@@ -173,6 +175,7 @@ namespace ProductCatalog.WebApi.Controllers
         {
             if (file == null)
             {
+                await Task.CompletedTask;
                 throw new ArgumentException(nameof(file));
             }
             string fileName = file.FileName;
