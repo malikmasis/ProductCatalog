@@ -61,7 +61,6 @@ namespace ProductCatalog.WebApi.Controllers
                 var product = await _context.Products.FindAsync(new object[] { id });
                 var productDto = _mapper.Map<ProductDto>(product);
 
-
                 if (productDto == null)
                 {
                     return NotFound();
@@ -102,8 +101,8 @@ namespace ProductCatalog.WebApi.Controllers
             }
         }
 
-        [HttpPut("update")]
-        public async Task<IActionResult> Update([FromBody] Product productData)
+        [HttpPut("update/{id}")]
+        public async Task<IActionResult> Update(long id, [FromBody] Product productData)
         {
             try
             {
@@ -113,7 +112,7 @@ namespace ProductCatalog.WebApi.Controllers
                     throw new ArgumentException(nameof(productData));
                 }
 
-                var product = await _context.Products.FindAsync(new object[] { productData.Id });
+                var product = await _context.Products.FindAsync(new object[] { id });
 
                 if (product == null)
                 {
